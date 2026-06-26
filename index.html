@@ -1,1 +1,48 @@
-halooo
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Guessing Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🎨 Color Guessing Game</h1>
+        <p class="subtitle">Guess the RGB values of the color!</p>
+        
+        <div class="color-box" id="colorBox"></div>
+        
+        <div class="game-info">
+            <p>Score: <span id="score">0</span></p>
+            <p id="feedback" class="feedback"></p>
+        </div>
+        
+        <div class="input-section">
+            <div class="input-group">
+                <label for="redInput">Red (0-255):</label>
+                <input type="number" id="redInput" min="0" max="255" placeholder="0">
+            </div>
+            
+            <div class="input-group">
+                <label for="greenInput">Green (0-255):</label>
+                <input type="number" id="greenInput" min="0" max="255" placeholder="0">
+            </div>
+            
+            <div class="input-group">
+                <label for="blueInput">Blue (0-255):</label>
+                <input type="number" id="blueInput" min="0" max="255" placeholder="0">
+            </div>
+        </div>
+        
+        <div class="button-section">
+            <button id="guessBtn" class="btn btn-primary">Submit Guess</button>
+            <button id="nextBtn" class="btn btn-secondary" style="display:none;">Next Color</button>
+        </div>
+        
+        <div class="hint" id="hint" style="display:none;"></div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
