@@ -1,48 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Color Guessing Game</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Reihan Kaissya | Link-in-Bio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h1>🎨 Color Guessing Game</h1>
-        <p class="subtitle">Guess the RGB values of the color!</p>
-        
-        <div class="color-box" id="colorBox"></div>
-        
-        <div class="game-info">
-            <p>Score: <span id="score">0</span></p>
-            <p id="feedback" class="feedback"></p>
-        </div>
-        
-        <div class="input-section">
-            <div class="input-group">
-                <label for="redInput">Red (0-255):</label>
-                <input type="number" id="redInput" min="0" max="255" placeholder="0">
-            </div>
-            
-            <div class="input-group">
-                <label for="greenInput">Green (0-255):</label>
-                <input type="number" id="greenInput" min="0" max="255" placeholder="0">
-            </div>
-            
-            <div class="input-group">
-                <label for="blueInput">Blue (0-255):</label>
-                <input type="number" id="blueInput" min="0" max="255" placeholder="0">
-            </div>
-        </div>
-        
-        <div class="button-section">
-            <button id="guessBtn" class="btn btn-primary">Submit Guess</button>
-            <button id="nextBtn" class="btn btn-secondary" style="display:none;">Next Color</button>
-        </div>
-        
-        <div class="hint" id="hint" style="display:none;"></div>
-    </div>
-    
-    <script src="script.js"></script>
+  <main class="container">
+    <!-- Profil Section -->
+    <section class="profile">
+      <img class="avatar" src="foto-profil.jpg" alt="Foto profil Reihan Kaissya">
+      <h1 class="name">Reihan Kaissya</h1>
+      <p class="bio">Pelajar & Programmer Pemula</p>
+    </section>
+
+    <!-- Links Section (konten akan diisi otomatis oleh JavaScript) -->
+    <nav class="links-container" id="links-container" aria-label="Tautan media sosial">
+      <!-- Buttons akan muncul di sini setelah halaman dimuat -->
+    </nav>
+  </main>
+
+  <!-- 
+    ╔══════════════════════════════════════════╗
+    ║  DISINI LINK (TIKTOK / IG / THREADS)    ║
+    ║  Semua tautan diletakkan di sini agar   ║
+    ║  mudah diedit. Cukup ubah href-nya.     ║
+    ╚══════════════════════════════════════════╝
+  -->
+  <!-- Instagram -->
+  <a href="https://instagram.com/reihan_kaissya" target="_blank" rel="noopener noreferrer" data-label="Instagram">Instagram</a>
+  <!-- Telegram -->
+  <a href="https://t.me/reihankaissya" target="_blank" rel="noopener noreferrer" data-label="Telegram">Telegram</a>
+  <!-- Threads -->
+  <a href="https://threads.net/@reihan_kaissya" target="_blank" rel="noopener noreferrer" data-label="Threads">Threads</a>
+  <!-- TikTok -->
+  <a href="https://tiktok.com/@reihan_kaissya" target="_blank" rel="noopener noreferrer" data-label="TikTok">TikTok</a>
+  <!-- ⬆️ Tambahkan link lain di atas dengan format yang sama ⬆️ -->
+
+  <script src="script.js"></script>
 </body>
 </html>
