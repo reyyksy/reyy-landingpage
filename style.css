@@ -172,19 +172,16 @@ a {
   color: #ffffff;
 }
 
-.link-icon svg {
+.link-icon :is(svg, i) {
   width: 24px;
   height: 24px;
   display: block;
   fill: currentColor;
 }
 
-.link-btn[data-platform="ig"] .link-icon svg {
-  fill: none;
-  stroke: currentColor;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-width: 1.9;
+.link-icon i {
+  font-size: 24px;
+  line-height: 1;
 }
 
 .link-text {
@@ -209,6 +206,10 @@ a {
 
 .link-btn[data-platform="gh"] .link-icon {
   color: #ffffff;
+}
+
+.link-btn[data-platform="fb"] .link-icon {
+  color: #1877f2;
 }
 
 .link-btn[data-platform="yt"] .link-icon {
@@ -250,9 +251,13 @@ a {
     height: 30px;
   }
 
-  .link-icon svg {
+  .link-icon :is(svg, i) {
     width: 23px;
     height: 23px;
+  }
+
+  .link-icon i {
+    font-size: 23px;
   }
 }
 
